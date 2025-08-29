@@ -207,8 +207,6 @@
               -maxNodeAge=${lib.escapeShellArg cfg.tailscale.cleanup.maxNodeAge} \
               -authorizedKeys=/etc/hoopsnake/ssh/authorized_keys \
               -hostKey=''${CREDENTIALS_DIRECTORY}/privateHostKey \
-              -clientIdFile=''${CREDENTIALS_DIRECTORY}/clientId \
-              -clientSecretFile=''${CREDENTIALS_DIRECTORY}/clientSecret \
               ${lib.escapeShellArg cfg.ssh.commandLine}
           '';
 
